@@ -1,0 +1,259 @@
+﻿/*! main layout CSS */
+
+@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic&subset=cyrillic,latin);
+@import url(http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic&subset=latin,cyrillic-ext);
+
+@import "icons";
+
+@orange: #e73f3f;
+@orange-text: #e73f3f;
+
+@pink: #ef39be;
+@pink-text: #b4198a;
+
+@yellow: #f6c70b;
+@yellow-text: #d1a90a;
+
+@blue: #39c2ef;
+@blue-text: #229dc5;
+
+@darkblue: #344a6a;
+@darkblue-text: #213552;
+
+@green: #4ca677;
+@green-text: #2d915d;
+
+@pale: #646a6e;
+@pale-text: #646a6e;
+
+.background-orange {
+    background-color: @orange;
+}
+.background-pink {
+    background-color: @pink;
+}
+.background-yellow {
+    background-color: @yellow;
+}
+.background-blue {
+    background-color: @blue;
+}
+.background-darkblue {
+    background-color: @darkblue;
+}
+.background-green {
+    background-color: @green;
+}
+
+body {
+  font-family: 'Ubuntu', sans-serif;  
+}
+
+.footer-wrapper {
+    min-height: 100%;
+}
+.main-wrapper {
+    background: #fff;
+    padding: 15px 0 0 15px;
+}
+.main-wrapper:after {
+    display: block;
+    content: " ";
+    clear: both;
+    min-height: 100%;
+}
+.header {
+    position: relative;
+    overflow: hidden;
+    color: @orange;
+
+    .header-background {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        -webkit-filter: blur(6px);
+        -moz-filter: blur(6px);
+        -o-filter: blur(6px);
+        filter: blur(6px);
+        -webkit-transform: scale(1.4);
+        -moz-transform: scale(1.4);
+        -ms-transform: scale(1.4);
+        -o-transform: scale(1.4);
+        transform: scale(1.4);
+        z-index: -1;
+        -webkit-transition: all 0.7s ease-out;
+        -moz-transition: all 0.7s ease-out;
+        -ms-transition: all 0.7s ease-out;
+        -o-transition: all 0.7s ease-out;
+        transition: all 0.7s ease-out;
+    
+        img{
+            width: 100%;
+            height: auto;
+            margin-top: -20%;
+        }
+    }
+}
+.header .main-navigation{
+    background-color: #fff;
+    color: #000;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+.header .main-navigation ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    
+    li{
+        display: inline-block;
+    }
+    li a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding: 20px 30px;
+    }
+}
+
+.header:after {
+    display: block;
+    content: " ";
+    clear: both;
+}
+
+.footer-fix {
+    height: 50px;
+}
+.footer {
+    height: 50px;
+    margin-top: -50px;
+    background: #4b4b4b;
+}
+
+
+/*Helpers*/
+.no-padding-left {
+    padding-left: 0;
+}
+.padding-lr{
+    padding: 0 10px;
+}
+.rounded-image {
+    border-radius: 50%;
+}
+.image-link {
+    text-decoration: none;
+}
+.clear-after:after {
+    display: block;
+    content: " ";
+    clear: both;
+}
+.simple-box {
+    position: relative;
+    margin-bottom: 20px;
+}
+.link-to-details {
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    font-size: 12px;
+    i {
+        font-size: 12px;
+    }
+}
+.cut-text {
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/*elements*/
+.colored-border-top {
+    border-top: 5px solid;
+    
+
+    h6 {
+        display: block;
+        text-transform: uppercase;
+        font-size: 12px;
+        line-height: 20px;
+    }
+}
+.colored-border-top.orange {
+    border-color: @orange;
+
+    h6 {
+        color: @orange-text;
+        a {
+            color: @orange-text;
+        }
+    }
+}
+.colored-border-top.pink {
+    border-color: @pink;
+
+    h6 {
+        color: @pink-text;
+        a {
+            color: @pink-text;
+        }
+    }
+}
+.colored-border-top.yellow {
+    border-color: @yellow;
+
+    h6 {
+        color: @yellow-text;
+        a {
+            color: @yellow-text;
+        }
+    }
+}
+.colored-border-top.blue {
+    border-color: @blue;
+
+    h6 {
+        color: @blue-text;
+        a {
+            color: @blue-text;
+        }
+    }
+}
+.colored-border-top.green {
+    border-color: @green;
+
+    h6 {
+        color: @green-text;
+        a {
+            color: @green-text;
+        }
+    }
+}
+.colored-border-top.darkblue {
+    border-color: @darkblue;
+
+    h6 {
+        color: @darkblue-text;
+        a {
+            color: @darkblue-text;
+        }
+    }
+}
+.colored-border-top.pale {
+    border-color: @pale;
+
+    h6 {
+        color: @pale-text;
+        a {
+            color: @pale-text;
+        }
+    }
+}
+
+

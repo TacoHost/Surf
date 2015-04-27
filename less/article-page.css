@@ -1,0 +1,120 @@
+.breadcrumbs-block {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 40px;
+  color: #bbbbbb;
+}
+.breadcrumbs-block a {
+  display: inline-block;
+  margin-right: 10px;
+  color: #374e71;
+}
+.breadcrumbs-block a:after {
+  display: inline-block;
+  content: ">";
+  margin-left: 12px;
+  font-weight: 300;
+  font-size: 12px;
+  color: #bbbbbb;
+}
+.comments-block .comment-item {
+  margin-bottom: 20px;
+}
+.comments-block .comment-item .comment-inner {
+  position: relative;
+  padding: 10px 10px 5px 25px;
+  border: 1px solid #f3f3f3;
+}
+.comments-block .comment-item .comment-inner .user-avatar {
+  position: absolute;
+  left: -18px;
+  top: 5px;
+  height: 35px;
+  width: 35px;
+  box-shadow: 0 0 0 3px #fff;
+}
+.comments-block .comment-item .comment-inner .name-date {
+  padding: 3px 0;
+}
+.comments-block .comment-item .comment-inner .name-date .date {
+  color: #778492;
+  font-size: 12px;
+}
+.comments-block .comment-item .comment-inner p {
+  margin: 10px 0 0;
+  color: #565656;
+}
+.comments-block .comment-item .comment-inner .function-block .btn-sm {
+  font-size: 12px;
+  padding: 2px 4px;
+  background: none;
+  color: #929292;
+  transition: all 0.3s ease-in;
+}
+.comments-block .comment-item .comment-inner .function-block .btn-sm i {
+  font-size: 14px;
+  position: relative;
+  top: 2px;
+}
+.comments-block .comment-item .comment-inner .function-block .btn-sm:hover {
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
+}
+.comments-block .comment-item .comment-inner .function-block .btn-sm:hover i {
+  color: #e36262;
+}
+.comments-block .comment-item.embedded {
+  padding-left: 20px;
+}
+.comments-block .comment-item.embedded-twice {
+  padding-left: 40px;
+}
+.social-block {
+  position: fixed;
+}
+.social-block .big-circle {
+  width: 58px;
+  height: 58px;
+  margin: 0 auto;
+  border-radius: 30px;
+  text-align: center;
+  position: relative;
+  padding: 14px 0 0 0;
+  border: 3px solid;
+}
+.social-block .big-circle .counter {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 30px;
+  height: 30px;
+  font-size: 12px;
+  padding: 6px 0;
+  border-radius: 20px;
+  color: #fff;
+}
+.social-block .big-circle.share {
+  border-color: #e36262;
+  color: #e36262;
+}
+.social-block .big-circle.share .counter {
+  background: #e36262;
+}
+.article-item {
+  font-size: 14px;
+  line-height: 150%;
+}
+.article-item h1 {
+  font-size: 29px;
+  font-family: 'Noto Serif', serif;
+  margin: 15px 0 25px;
+}
+.article-item blockquote {
+  color: #5c6f79;
+  margin: 20px 0 20px 50px;
+  font-size: 14px;
+  line-height: 150%;
+}
+.article-item img {
+  margin-bottom: 20px;
+}
