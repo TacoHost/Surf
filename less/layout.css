@@ -1,6 +1,6 @@
-/*! main layout CSS */
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic&subset=cyrillic,latin);
+﻿@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic&subset=cyrillic,latin);
 @import url(http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic&subset=latin,cyrillic-ext);
+/*! main layout CSS */
 @font-face {
   font-family: 'Material-Design-Icons';
   src: url('../material-design-icons/Material-Design-Icons.eot?3ocs8m');
@@ -2517,6 +2517,48 @@
 .mdi-toggle-star:before {
   content: "\e8f5";
 }
+.header .header-background {
+  background-image: url("../img/header-background.png");
+  height: 100%;
+  width: 100%;
+}
+.header .navbar-links {
+  font-family: 'Times New Roman', Times, sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+.header .navbar-links a {
+  color: black;
+}
+.header .search-form {
+  margin-top: 10px;
+}
+.header .surf {
+  height: 130px;
+  position: relative;
+}
+.header .surf-text {
+  margin-top: 47px;
+  margin-left: 99px;
+}
+.header .stringSurf {
+  font-size: 28px;
+  font-family: Arial, sans-serif;
+  color: white;
+}
+.header .stringMe {
+  font-size: 28px;
+  color: black;
+  background-color: white;
+  font-family: "Helvetica Neue Light", sans-serif;
+  padding: 0.5% 0.7%;
+}
+.header .city-name {
+  margin-left: 230px;
+  margin-top: -45px;
+  font-size: 20px;
+  font-family: Verdana, Aharoni, sans-serif;
+}
 .background-orange {
   background-color: #e73f3f;
 }
@@ -2727,3 +2769,4 @@ body {
 .colored-border-top.pale h6 a {
   color: #646a6e;
 }
+/*# sourceMappingURL=layout.css.map */
