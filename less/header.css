@@ -40,4 +40,15 @@
   font-size: 20px;
   font-family: Verdana, Aharoni, sans-serif;
 }
+.header .search-area {
+  padding: 20px 20px;
+}
+.header .search-icon {
+  font-size: 14px;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .header .collapse {
+    display: none !important;
+  }
+}
 /*# sourceMappingURL=header.css.map */
