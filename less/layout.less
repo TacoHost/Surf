@@ -29,6 +29,9 @@
 @pale: #646a6e;
 @pale-text: #646a6e;
 
+@lightpale: #dbdbdb;
+@lightpale-text: #cbcbcb;
+
 .background-orange {
     background-color: @orange;
 }
@@ -177,9 +180,12 @@ body {
 }
 
 /*elements*/
+
+.colored-border-bottom {
+    border-bottom: 1px solid;
+}
 .colored-border-top {
     border-top: 5px solid;
-    
 
     h6 {
         display: block;
@@ -188,7 +194,8 @@ body {
         line-height: 20px;
     }
 }
-.colored-border-top.orange {
+.colored-border-top.orange,
+.colored-border-bottom.orange {
     border-color: @orange;
 
     h6 {
@@ -198,7 +205,8 @@ body {
         }
     }
 }
-.colored-border-top.pink {
+.colored-border-top.pink,
+.colored-border-bottom.pink {
     border-color: @pink;
 
     h6 {
@@ -208,7 +216,8 @@ body {
         }
     }
 }
-.colored-border-top.yellow {
+.colored-border-top.yellow,
+.colored-border-bottom.yellow {
     border-color: @yellow;
 
     h6 {
@@ -218,7 +227,8 @@ body {
         }
     }
 }
-.colored-border-top.blue {
+.colored-border-top.blue,
+.colored-border-bottom.blue {
     border-color: @blue;
 
     h6 {
@@ -228,7 +238,8 @@ body {
         }
     }
 }
-.colored-border-top.green {
+.colored-border-top.green,
+.colored-border-bottom.green {
     border-color: @green;
 
     h6 {
@@ -238,7 +249,8 @@ body {
         }
     }
 }
-.colored-border-top.darkblue {
+.colored-border-top.darkblue,
+.colored-border-bottom.darkblue {
     border-color: @darkblue;
 
     h6 {
@@ -248,7 +260,8 @@ body {
         }
     }
 }
-.colored-border-top.pale {
+.colored-border-top.pale,
+.colored-border-bottom.pale {
     border-color: @pale;
 
     h6 {
@@ -258,21 +271,31 @@ body {
         }
     }
 }
+.colored-border-top.light-pale,
+.colored-border-bottom.light-pale {
+    border-color: @lightpale;
+
+    h6 {
+        color: @lightpale-text;
+        a {
+            color: @lightpale-text;
+        }
+    }
+}
 .colored-icons-red {
     color:red;
 }
 .md-sized-icons {
-        font-size: 25px;
+    font-size: 25px;
 
 }
 .sm-sized-icons {
-    font-size: 14px;
+    font-size: 17px;
+    position: relative;
+    top: 3px;
 }
 .xs-sized-icons {
     font-size: 11px;
-}
-.colored-border-bottom-thin {
-    border-bottom: 1px solid #dbdbdb;
 }
 .sm-margin {
     margin-top: 30px;

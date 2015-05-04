@@ -2781,6 +2781,9 @@ body {
   white-space: nowrap;
 }
 /*elements*/
+.colored-border-bottom {
+  border-bottom: 1px solid;
+}
 .colored-border-top {
   border-top: 5px solid;
 }
@@ -2790,68 +2793,101 @@ body {
   font-size: 12px;
   line-height: 20px;
 }
-.colored-border-top.orange {
+.colored-border-top.orange,
+.colored-border-bottom.orange {
   border-color: #e73f3f;
 }
-.colored-border-top.orange h6 {
+.colored-border-top.orange h6,
+.colored-border-bottom.orange h6 {
   color: #e73f3f;
 }
-.colored-border-top.orange h6 a {
+.colored-border-top.orange h6 a,
+.colored-border-bottom.orange h6 a {
   color: #e73f3f;
 }
-.colored-border-top.pink {
+.colored-border-top.pink,
+.colored-border-bottom.pink {
   border-color: #ef39be;
 }
-.colored-border-top.pink h6 {
+.colored-border-top.pink h6,
+.colored-border-bottom.pink h6 {
   color: #b4198a;
 }
-.colored-border-top.pink h6 a {
+.colored-border-top.pink h6 a,
+.colored-border-bottom.pink h6 a {
   color: #b4198a;
 }
-.colored-border-top.yellow {
+.colored-border-top.yellow,
+.colored-border-bottom.yellow {
   border-color: #f6c70b;
 }
-.colored-border-top.yellow h6 {
+.colored-border-top.yellow h6,
+.colored-border-bottom.yellow h6 {
   color: #d1a90a;
 }
-.colored-border-top.yellow h6 a {
+.colored-border-top.yellow h6 a,
+.colored-border-bottom.yellow h6 a {
   color: #d1a90a;
 }
-.colored-border-top.blue {
+.colored-border-top.blue,
+.colored-border-bottom.blue {
   border-color: #39c2ef;
 }
-.colored-border-top.blue h6 {
+.colored-border-top.blue h6,
+.colored-border-bottom.blue h6 {
   color: #229dc5;
 }
-.colored-border-top.blue h6 a {
+.colored-border-top.blue h6 a,
+.colored-border-bottom.blue h6 a {
   color: #229dc5;
 }
-.colored-border-top.green {
+.colored-border-top.green,
+.colored-border-bottom.green {
   border-color: #4ca677;
 }
-.colored-border-top.green h6 {
+.colored-border-top.green h6,
+.colored-border-bottom.green h6 {
   color: #2d915d;
 }
-.colored-border-top.green h6 a {
+.colored-border-top.green h6 a,
+.colored-border-bottom.green h6 a {
   color: #2d915d;
 }
-.colored-border-top.darkblue {
+.colored-border-top.darkblue,
+.colored-border-bottom.darkblue {
   border-color: #344a6a;
 }
-.colored-border-top.darkblue h6 {
+.colored-border-top.darkblue h6,
+.colored-border-bottom.darkblue h6 {
   color: #213552;
 }
-.colored-border-top.darkblue h6 a {
+.colored-border-top.darkblue h6 a,
+.colored-border-bottom.darkblue h6 a {
   color: #213552;
 }
-.colored-border-top.pale {
+.colored-border-top.pale,
+.colored-border-bottom.pale {
   border-color: #646a6e;
 }
-.colored-border-top.pale h6 {
+.colored-border-top.pale h6,
+.colored-border-bottom.pale h6 {
   color: #646a6e;
 }
-.colored-border-top.pale h6 a {
+.colored-border-top.pale h6 a,
+.colored-border-bottom.pale h6 a {
   color: #646a6e;
+}
+.colored-border-top.light-pale,
+.colored-border-bottom.light-pale {
+  border-color: #dbdbdb;
+}
+.colored-border-top.light-pale h6,
+.colored-border-bottom.light-pale h6 {
+  color: #cbcbcb;
+}
+.colored-border-top.light-pale h6 a,
+.colored-border-bottom.light-pale h6 a {
+  color: #cbcbcb;
 }
 .colored-icons-red {
   color: red;
@@ -2860,13 +2896,12 @@ body {
   font-size: 25px;
 }
 .sm-sized-icons {
-  font-size: 14px;
+  font-size: 17px;
+  position: relative;
+  top: 3px;
 }
 .xs-sized-icons {
   font-size: 11px;
-}
-.colored-border-bottom-thin {
-  border-bottom: 1px solid #dbdbdb;
 }
 .sm-margin {
   margin-top: 30px;
