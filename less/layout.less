@@ -3,8 +3,8 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic&subset=cyrillic,latin);
 @import url(http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic&subset=latin,cyrillic-ext);
 
-@import "icons";
 @import "header";
+@import "icons";
 
 @orange: #e73f3f;
 @orange-text: #e73f3f;
@@ -26,6 +26,9 @@
 
 @pale: #646a6e;
 @pale-text: #646a6e;
+
+@lightpale: #e2e2e2;
+@lightpale-text: #c2c2c2;
 
 .background-orange {
     background-color: @orange;
@@ -174,11 +177,10 @@ body {
     white-space: nowrap;
 }
 
-/*elements*/
+/*website helpers*/
 .colored-border-top {
     border-top: 5px solid;
     
-
     h6 {
         display: block;
         text-transform: uppercase;
@@ -186,7 +188,11 @@ body {
         line-height: 20px;
     }
 }
-.colored-border-top.orange {
+.colored-border-bottom {
+    border-bottom: 1px solid;
+}
+.colored-border-top.orange,
+.colored-border-bottom.orange {
     border-color: @orange;
 
     h6 {
@@ -196,7 +202,8 @@ body {
         }
     }
 }
-.colored-border-top.pink {
+.colored-border-top.pink,
+.colored-border-bottom.pink {
     border-color: @pink;
 
     h6 {
@@ -206,7 +213,8 @@ body {
         }
     }
 }
-.colored-border-top.yellow {
+.colored-border-top.yellow,
+.colored-border-bottom.yellow {
     border-color: @yellow;
 
     h6 {
@@ -216,7 +224,8 @@ body {
         }
     }
 }
-.colored-border-top.blue {
+.colored-border-top.blue,
+.colored-border-bottom.blue {
     border-color: @blue;
 
     h6 {
@@ -226,7 +235,8 @@ body {
         }
     }
 }
-.colored-border-top.green {
+.colored-border-top.green,
+.colored-border-bottom.green {
     border-color: @green;
 
     h6 {
@@ -236,7 +246,8 @@ body {
         }
     }
 }
-.colored-border-top.darkblue {
+.colored-border-top.darkblue,
+.colored-border-bottom.darkblue {
     border-color: @darkblue;
 
     h6 {
@@ -246,13 +257,25 @@ body {
         }
     }
 }
-.colored-border-top.pale {
+.colored-border-top.pale,
+.colored-border-bottom.pale {
     border-color: @pale;
 
     h6 {
         color: @pale-text;
         a {
             color: @pale-text;
+        }
+    }
+}
+.colored-border-top.light-pale,
+.colored-border-bottom.light-pale {
+    border-color: @lightpale;
+
+    h6 {
+        color: @lightpale-text;
+        a {
+            color: @lightpale-text;
         }
     }
 }
@@ -265,9 +288,7 @@ body {
 .xs-sized-icons {
     font-size: 11px;
 }
-.colored-border-bottom-thin {
-    border-bottom: 1px solid #dbdbdb;
-}
+
 .sm-margin {
     margin-top: 30px;
     margin-bottom: 23px;
@@ -280,3 +301,7 @@ body {
         margin-left: auto;
         margin-right: auto;
 }
+
+
+
+
