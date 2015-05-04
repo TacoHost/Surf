@@ -2517,6 +2517,9 @@
 .mdi-toggle-star:before {
   content: "\e8f5";
 }
+.header {
+  color: white;
+}
 .header .header-background {
   background-image: url("../img/header-background.png");
   height: 100%;
@@ -2532,6 +2535,10 @@
 }
 .header .search-form {
   margin-top: 10px;
+}
+.header .socnet {
+  float: right;
+  margin-top: 47px;
 }
 .header .surf {
   height: 130px;
@@ -2558,6 +2565,9 @@
   margin-top: -45px;
   font-size: 20px;
   font-family: Verdana, Aharoni, sans-serif;
+}
+.header .city-name a {
+  color: white;
 }
 .header .search-area {
   padding: 20px 20px;
@@ -2654,7 +2664,7 @@ body {
 .header {
   position: relative;
   overflow: hidden;
-  color: #e73f3f;
+  color: white;
 }
 .header .header-background {
   position: absolute;
