@@ -30,7 +30,28 @@
   background: #e36262;
 }
 #user-page .wallpaper-block {
-  min-height: 370px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+#user-page .wallpaper-block .user-avatar {
+  display: block;
+  width: 150px;
+  border-radius: 90px;
+  border: 3px solid #fff;
+  margin: 20px auto;
+}
+#user-page .wallpaper-block h1 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
 }
 #user-page .simple-box {
   position: relative;
@@ -48,6 +69,7 @@
   left: 0;
   min-height: 100%;
   overflow: hidden;
+  border-radius: 5px 0 0 5px;
 }
 #user-page .simple-box .user-wallpaper-blur img {
   display: block;
@@ -80,5 +102,15 @@
 #user-page .article-image img {
   max-width: 80%;
   margin: 0 auto;
+}
+@media (min-width: 992px) {
+  .wallpaper-block {
+    min-height: 305px;
+  }
+}
+@media (min-width: 1200px) {
+  .wallpaper-block {
+    min-height: 370px;
+  }
 }
 /*# sourceMappingURL=user-page.css.map */
