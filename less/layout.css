@@ -2546,6 +2546,9 @@
   height: 130px;
   position: relative;
 }
+.header .surf .row {
+  margin-top: 50px;
+}
 .header .surf-text {
   margin-top: 47px;
   margin-left: 99px;
@@ -2852,6 +2855,9 @@ body {
 }
 .colored-icons-red {
   color: red;
+}
+.md-sized-icons {
+  font-size: 25px;
 }
 .sm-sized-icons {
   font-size: 14px;

@@ -27,6 +27,9 @@
   height: 130px;
   position: relative;
 }
+.header .surf .row {
+  margin-top: 50px;
+}
 .header .surf-text {
   margin-top: 47px;
   margin-left: 99px;
