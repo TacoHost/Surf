@@ -20,7 +20,6 @@
         <![endif]-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-
         <!-- CSS and Scripts -->
         <link href="css/bootstrap_override.css" rel="stylesheet">
 
@@ -28,12 +27,11 @@
         <link href="less/user-page.min.css" rel="stylesheet">
     </head>
     <body>
-        <div class="footer-wrapper">
+        <div class="footer-wrapper" id="user-page">
 
             <div id="js-header"></div>
             <script type="text/javascript">
                 $("#js-header").load("header.html");
-
             </script>
 
             <div class="container">
@@ -41,14 +39,15 @@
                     <div class="main-wrapper">
                         <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding-left">
                             <!--main-page user-image-->
-                            <div class="simple-box">
-                                <img src="img/user-page.png" class="img-responsive" id="user-page" alt="" />
-                                <div class="col-lg-12 col-md-12 col-xs-12 no-padding-left">
-                                    <img src="img/user-page-blur-trim.png" class="img-responsive" alt="" />
+                            <div class="simple-box wallpaper-block">
+                                <img src="img/user-page.png" class="img-responsive user-wallpaper" alt="" />
+                                
+                                <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 user-wallpaper-blur">
+                                        <img src="img/user-page.png" class="js-blurred-image" alt="" />
                                 </div>
-                                <div class="col-md-9 col-xs-9 no-padding-left">
+                                <!--<div class="col-xs-9 col-sm-9 col-md-9 col-xs-9 no-padding-left">
                                     sdasdasd
-                                </div>
+                                </div>-->
                             </div>
                         </div>
 
@@ -80,7 +79,7 @@
                                         Фото пользователя
                                     </a>
                                 </h6>
-                                <div class="row photo-container">
+                                <div class="photo-container">
                                     <!--photo-container-->
                                     <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
                                         <img src="/img/user-photo-image1.png" class="img-responsive" />
@@ -262,7 +261,7 @@
         </script>
 
         <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/user-page.js"></script>
         <script src="js/bootstrap.min.js"></script>
-
     </body>
 </html>
