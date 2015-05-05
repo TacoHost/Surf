@@ -2538,51 +2538,46 @@
 .header .search-form {
   margin-top: 10px;
 }
-.header .socnet {
-  float: right;
-  margin-top: 47px;
-}
 .header .surf {
-  height: 130px;
   position: relative;
 }
-.header .surf .row {
-  margin-top: 50px;
+.header .surf .row > div {
+  margin-top: 45px;
+  margin-bottom: 45px;
 }
-.header .surf-text {
-  margin-top: 47px;
-  margin-left: 99px;
+@media (max-width: 994px) {
+  .header .surf .row > div {
+    margin-top: 14px;
+    margin-bottom: 15px;
+  }
 }
 .header .stringSurf {
-  font-size: 28px;
+  font-size: 24px;
   font-family: Arial, sans-serif;
   color: white;
 }
 .header .stringMe {
-  font-size: 28px;
+  font-size: 24px;
   color: black;
   background-color: white;
   font-family: "Helvetica Neue Light", sans-serif;
   padding: 0.5% 0.7%;
 }
 .header .city-name {
-  margin-left: 230px;
-  margin-top: -45px;
-  font-size: 20px;
+  font-size: 12px;
   font-family: Verdana, Aharoni, sans-serif;
 }
 .header .city-name a {
   color: white;
+}
+.header .btns-socnet {
+  padding-top: 15px;
 }
 .header .search-area {
   padding: 20px 20px;
 }
 .header .search-icon {
   font-size: 14px;
-}
-.header .weather {
-  font-size: 15px;
-  margin-top: -45px;
 }
 @media (max-width: 992px) {
   .header .navbar-header {
@@ -2604,10 +2599,10 @@
     border-width: 0 0 1px;
   }
   .header .navbar-collapse.collapse {
-    display: none!important;
+    display: none !important;
   }
   .header .navbar-nav {
-    float: none!important;
+    float: none !important;
     margin-top: 7.5px;
   }
   .header .navbar-nav > li {
@@ -2635,11 +2630,11 @@
   padding: 0;
 }
 .footer-style ul li a {
-  font-size: 12pt;
+  font-size: 12px;
   color: #727272;
 }
 .footer-style .copyright {
-  font-size: 12pt;
+  font-size: 12px;
   color: #727272;
   padding: 1%;
 }
