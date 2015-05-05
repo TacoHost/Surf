@@ -26,19 +26,7 @@ $(window).scroll(function () {
 });   FIX OR DELETE*/ 
 $(document).ready(function() {
     $('[data-toggle="tooltip"]').tooltip();
-    var $socblock = $(".social-block");
-    $(window).scroll(function() {
 
-        if (window.scrollY >= $socblock.offset().top) {
-            $socblock.css("position", "fixed").css("top", "50px");
-        }
-        if (window.scrollY < $socblock.offset().top) {
-            $socblock.css({
-                position: "absolute",
-                top: "0"
-            });
-        }
-    });
     /*
         var $socblock = $(".social-block"),
             $window = $(window),
@@ -52,5 +40,5 @@ $(document).ready(function() {
                 $socblock.removeClass("fixed");
 
             }
-        });FIX OF DELETE*/
+        });FIX OF DELETE    */
 });
