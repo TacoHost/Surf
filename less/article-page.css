@@ -69,7 +69,7 @@
 .comments-block .comment-item.embedded-twice {
   padding-left: 40px;
 }
-.social-block.fixed {
+.social-block {
   position: relative;
 }
 .social-block .big-circle {
@@ -124,6 +124,7 @@
   font-size: 29px;
   font-family: 'Noto Serif', serif;
   margin: 15px 0 25px;
+  font-weight: 800;
 }
 .article-item blockquote {
   color: #5c6f79;

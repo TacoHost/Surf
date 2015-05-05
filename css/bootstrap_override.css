@@ -18,6 +18,28 @@ body {
 }
 
 
+.tooltip {
+    
+}
+
+.tooltip.in {
+  filter: alpha(opacity=100);
+  
+    -ms-opacity: 1;
+    opacity: 1;
+}
+.tooltip .tooltip-inner {
+    background-color: #20a0ca;
+}
+
+.tooltip.top .tooltip-arrow {
+  bottom: 0;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px 5px 0;
+  border-top-color: #20a0ca;
+}
+
 .nav-tabs {
     border-top: 5px solid #4ac7f0;
     border-bottom: none;

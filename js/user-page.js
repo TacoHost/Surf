@@ -5,13 +5,3 @@
 $(window).resize(function () {
     blurImage();
 });
-
-var distanceToSocial = $('.social-block').offset().top, $window = $(window);
-
-$window.scroll(function () {
-    if ($window.scrollTop() >= distanceToSocial) {
-        $('.social-block').css("top", "20px");
-    } else {
-        $('.social-block');
-    }
-});
