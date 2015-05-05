@@ -1,7 +1,5 @@
 ﻿.best-users {
     
-
-    
     .user-item {
         padding: 0 2px 4px;
         
@@ -14,8 +12,10 @@
             .background {
                 position: absolute;
                 width: 100%;
+                min-height: 100%;
                 z-index: 1;
-                top: -20%;
+                top: 0;
+                left: 0;
             }
             .user-information {
                 position: relative;
@@ -36,6 +36,11 @@
                     margin: 10px 0;
                 }
             }
+        }
+    }
+    .col-xs-6.col-sm-4.col-md-3.col-lg-3{
+        .background {
+            top: -45%;
         }
     }
 }

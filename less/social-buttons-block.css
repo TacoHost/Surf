@@ -1,5 +1,6 @@
 ﻿.social-block {
   position: relative;
+  z-index: 900;
 }
 .social-block .big-circle {
   width: 58px;

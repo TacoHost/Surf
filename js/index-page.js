@@ -15,7 +15,7 @@
 
     $('#cbp-fwslider').cbpFWSlider({
         easing: 'ease'
-    });
+});
 
 });
 

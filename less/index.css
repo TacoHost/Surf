@@ -54,8 +54,10 @@
 .best-users .user-item .user-inner .background {
   position: absolute;
   width: 100%;
+  min-height: 100%;
   z-index: 1;
-  top: -20%;
+  top: 0;
+  left: 0;
 }
 .best-users .user-item .user-inner .user-information {
   position: relative;
@@ -73,6 +75,26 @@
 }
 .best-users .user-item .user-inner ul li {
   margin: 10px 0;
+}
+.best-users .col-xs-6.col-sm-4.col-md-3.col-lg-3 .background {
+  top: -45%;
+}
+.vote-block .vote-variants li {
+  border-top: 1px solid #f1f1f1;
+  padding: 5px 0;
+}
+.vote-block .vinner {
+  background: #02a3d8;
+  color: #fff;
+  padding: 5px;
+  font-size: 12px;
+}
+.vote-block .vinner .vinner-name {
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.vote-block .vinner label {
+  text-transform: uppercase;
 }
 .carousel {
   margin-bottom: 20px;
@@ -311,6 +333,9 @@
   border-width: 14px 0 14px 6px;
   border-color: transparent transparent transparent #39c2ef;
 }
+.presents-preview .shop-item .tag.background-orange:after {
+  border-color: transparent transparent transparent #E73F3F;
+}
 .best-photo {
   height: 250px;
   overflow: hidden;
@@ -389,6 +414,9 @@
 }
 .popular-communities .community-item a {
   display: block;
+}
+.popular-communities .community-item a :hover {
+  text-decoration: none;
 }
 .popular-communities .community-item .logo {
   display: inline-block;

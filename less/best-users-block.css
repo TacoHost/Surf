@@ -10,8 +10,10 @@
 .best-users .user-item .user-inner .background {
   position: absolute;
   width: 100%;
+  min-height: 100%;
   z-index: 1;
-  top: -20%;
+  top: 0;
+  left: 0;
 }
 .best-users .user-item .user-inner .user-information {
   position: relative;
@@ -29,5 +31,8 @@
 }
 .best-users .user-item .user-inner ul li {
   margin: 10px 0;
+}
+.best-users .col-xs-6.col-sm-4.col-md-3.col-lg-3 .background {
+  top: -45%;
 }
 /*# sourceMappingURL=best-users-block.css.map */
