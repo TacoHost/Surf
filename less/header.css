@@ -22,28 +22,37 @@
 .header .surf {
   position: relative;
 }
-.header .surf .row {
+.header .surf .row > div {
   margin-top: 45px;
   margin-bottom: 45px;
 }
+@media (max-width: 994px) {
+  .header .surf .row > div {
+    margin-top: 14px;
+    margin-bottom: 15px;
+  }
+}
 .header .stringSurf {
-  font-size: 28px;
+  font-size: 24px;
   font-family: Arial, sans-serif;
   color: white;
 }
 .header .stringMe {
-  font-size: 28px;
+  font-size: 24px;
   color: black;
   background-color: white;
   font-family: "Helvetica Neue Light", sans-serif;
   padding: 0.5% 0.7%;
 }
 .header .city-name {
-  font-size: 20px;
+  font-size: 12px;
   font-family: Verdana, Aharoni, sans-serif;
 }
 .header .city-name a {
   color: white;
+}
+.header .btns-socnet {
+  padding-top: 15px;
 }
 .header .search-area {
   padding: 20px 20px;
@@ -71,10 +80,10 @@
     border-width: 0 0 1px;
   }
   .header .navbar-collapse.collapse {
-    display: none!important;
+    display: none !important;
   }
   .header .navbar-nav {
-    float: none!important;
+    float: none !important;
     margin-top: 7.5px;
   }
   .header .navbar-nav > li {
