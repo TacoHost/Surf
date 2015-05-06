@@ -21,10 +21,12 @@ body .main-info-container button {
   margin: 5px;
 }
 body .row a {
-  color: rgba(255, 255, 255, 0.7);
   font-size: 12px;
 }
 body .row i {
   float: right;
+}
+body .links {
+  color: rgba(255, 255, 255, 0.7);
 }
 /*# sourceMappingURL=authentification.css.map */
