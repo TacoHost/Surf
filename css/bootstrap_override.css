@@ -11,17 +11,10 @@ body {
         width: 1260px;
     }
 }
-.btn {
-    -ms-border-radius: 0;
-    border-radius: 0;
-    outline: none;
-}
-
 
 .tooltip {
     
 }
-
 .tooltip.in {
   filter: alpha(opacity=100);
   
