@@ -2638,7 +2638,6 @@
   color: #727272;
   padding: 1%;
 }
-<<<<<<< HEAD
 .header-without-nav {
   height: 100%;
   width: 100%;
@@ -2660,7 +2659,7 @@
   background-color: white;
   font-family: "Helvetica Neue Light", sans-serif;
   padding: 0.1% 0.1%;
-=======
+}
 .bottom-styled-input {
   border-radius: 0;
   border: none;
@@ -2687,7 +2686,6 @@
 .btn-info {
   background: #39c2ef;
   border: 1px solid #148bb2;
->>>>>>> d1a5adf1c8c2654560ccec1b91e8dea080b82011
 }
 .background-orange {
   background-color: #e73f3f;
