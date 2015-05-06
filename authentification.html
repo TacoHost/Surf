@@ -19,7 +19,6 @@
     <![endif]-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-
     <!-- CSS and Scripts -->
     <link href="css/bootstrap_override.css" rel="stylesheet">
 
@@ -33,57 +32,82 @@
         <script type="text/javascript">
             $("#js-header").load("header-without-nav.html");
         </script>
-
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-xs-1 col-sm-2 col-md-3 col-lg-3"></div>
-            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="row">
-                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
-                        Авторизация Surf Me
-                    </div>
-                    <div class="form">
-
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <div class="colored-border-top blue">регистрация</div>
-                            <div>
-                                <input type="text" placeholder="e-mail" />
-                            </div>
-                            <div>
-                                <input type="text" placeholder="password" />
-                            </div>
-                            <div>
-                                <input type="text" placeholder="repeat password" />
-                            </div>
-                            <!--place for widget-->
-                            <div></div>
-                            <button class="btn btn-info">
-                                зарегистрироваться
-                            </button>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-1 col-sm-2 col-md-3 col-lg-3"></div>
+                <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+                    <div class="row aut">
+                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 authef-title">
+                            Авторизация Surf Me
                         </div>
-                        <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
-                            <div class="colored-border-top pale">войти</div>
-                            <div>
-                                <input type="text" placeholder="password" />
+                        <div class="clearfix"></div>
+                        <div class="main-info-container clear-after">
+
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="colored-border-top blue">
+                                    <h6>
+                                        регистрация
+                                    </h6>
+                                </div>
+                                <div>
+                                    <input class="form-control bottom-styled-input" type="text" placeholder="e-mail" />
+                                </div>
+                                <div>
+                                    <input class="form-control bottom-styled-input" type="text" placeholder="password" />
+                                </div>
+                                <div>
+                                    <input class="form-control bottom-styled-input" type="text" placeholder="repeat password" />
+                                </div>
+                                <div>THIS PLACE IS BOOKED FOR WIDGET</div>
+                                <!--place for widget-->
+                                <button class="btn btn-info">
+                                    зарегистрироваться
+                                </button>
                             </div>
-                            <div>
-                                <input type="text" placeholder="repeat password" />
+                            <div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                                <div class="colored-border-top pale">
+                                    <h6>войти</h6>
+                                </div>
+                                <div>
+                                    <input class="form-control bottom-styled-input" type="text" placeholder="password" />
+                                </div>
+                                <div>
+                                    <input class="form-control bottom-styled-input" type="text" placeholder="repeat password" />
+                                </div>
+                                <button class="btn btn-default">войти</button>
+                                <div class="colored-border-top pale">
+                                    <h6>войти через соцсети</h6>
+                                </div>
+                                <button class="btn btn-default">войти через вконтакте</button>
+                                <button class="btn btn-default">войти через Facebook</button>
+                                <button class="btn btn-default">войти через Google +</button>
                             </div>
-                            <button class="btn btn-default">войти</button>
-                            <div class="colored-border-top pale">войти через соцсети</div>
-                            <button class="btn btn-default">войти через вконтакте</button>
-                            <button class="btn btn-default">войти через Facebook</button>
-                            <button class="btn btn-default">войти через Google +</button>
                         </div>
                     </div>
-
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 no-padding-left"><a href="">авторизация</a></div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 no-padding-left">
+                            <a href="">забыл пароль</a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 no-padding-left">
+                            <a href="">помощь</a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 no-padding-left">
+                            <a href="">условия</a>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-4 col-lg-4">
+                            <i class="mdi-action-android"></i>
+                            <i class="mdi-action-android"></i>
+                            <i class="mdi-action-android"></i>
+                            <i class="mdi-action-android"></i>
+                            <i class="mdi-action-android"></i>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col-xs-1 col-sm-2 col-md-3 col-lg-3"></div>
-
         </div>
     </div>
+
     <div id="js-footer"></div>
     <script type="text/javascript">
         $("#js-footer").load("footer.html");
