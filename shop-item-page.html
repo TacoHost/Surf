@@ -25,6 +25,8 @@
 
         <link href="less/layout.min.css" rel="stylesheet">
         <link href="less/shop-item-page.min.css" rel="stylesheet">
+        
+        <link href="plugins/sliderpro/slider-pro.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="footer-wrapper">
@@ -75,10 +77,39 @@
                             </div>
                         </div>
                         <div class="col-xs-12 col-sm-11 col-md-4 col-lg-4 no-padding-left">
-                            <div class="simple-box article-item">
-                                <img src="http://upload.wikimedia.org/wikipedia/commons/b/b1/SUNY_Nanotech_Center.jpg" class="img-responsive" alt="" />
+                            <div class="simple-box">
+                                <div class="slider-pro" id="js-shop-slider">
+                                    <div class="sp-slides">
+                                        <div class="sp-slide">
+                                            <img class="sp-image" src="http://apple-minsk.by/files/items/1150/icon_480x390.png" />
+                                        </div>
+                                        <div class="sp-slide">
+                                            <img class="sp-image" src="http://apple-minsk.by/files/galleries/893/3688/src_480x391.jpg?1" alt="" />
+                                        </div>
+                                        <div class="sp-slide">
+                                            <img class="sp-image" src="http://apple-minsk.by/files/galleries/893/3689/src_480x391.jpg?1" alt="" />
+                                        </div>
+                                        <div class="sp-slide">
+                                            <img class="sp-image" src="http://apple-minsk.by/files/galleries/893/3690/src_480x391.jpg?1" />
+                                        </div>
+                                    </div>
+                                    <div class="sp-thumbnails">
+                                        <div class="sp-thumbnail">
+                                            <img src="http://apple-minsk.by/files/items/1150/icon_480x390.png" alt="" />
+                                        </div>
+                                        <div class="sp-thumbnail">
+                                            <img src="http://apple-minsk.by/files/galleries/893/3688/src_480x391.jpg?1" alt="" />
+                                        </div>
+                                        <div class="sp-thumbnail">
+                                            <img src="http://apple-minsk.by/files/galleries/893/3689/src_480x391.jpg?1" alt="" />
+                                        </div>
+                                        <div class="sp-thumbnail">
+                                            <img src="http://apple-minsk.by/files/galleries/893/3690/src_480x391.jpg?1" alt="" />
+                                        </div>
+                                    </div>
+                                </div>
                                 <blockquote>
-                                    Вместо стандартного размещения агрегатов станции на большой площади, предлагается разместить их компактно, задействовав третье измерение. Полученное предприятие можно будет накрыть куполом, который не только придаст ему эстетичности, но и позволит организовать зимний сад. Таким образом, станция сможет стать центром социальной активности местных жителей. Зимой можно будет погулять среди растений и познакомиться поближе с работой станции.
+                                    Новые смартфоны от Apple, как всегда, сопровождает большая шумиха: азиаты, афроамериканцы и выходцы из Ближнего Востока создают ажиотаж очередями в первый день продаж, Тим Кук рапортует о рекордных продажах, покупатели на что-нибудь жалуются и устраивают очередной перформанс вроде сгибания iPhone 6 Plus.
                                 </blockquote>
                             </div>
                         </div>
@@ -420,9 +451,18 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/layout.js"></script>
         <script src="plugins/parallax/parallax.min.js"></script>
+        <script src="plugins/sliderpro/jquery.sliderPro.min.js"></script>
 
         <script src="plugins/progress-circle/circle-progress.js"></script>
         
+        <script>
+            $('#js-shop-slider').sliderPro({
+                width: "100%",
+                height: 460,
+                thumbnailsPosition: "bottom",
+                buttons: false
+            });
+        </script>
     </body>
 
 </html>

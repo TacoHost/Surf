@@ -19,12 +19,13 @@
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        
+
         <!-- CSS and Scripts -->
         <link href="css/bootstrap_override.css" rel="stylesheet">
 
         <link href="less/layout.min.css" rel="stylesheet">
         <link href="less/index.min.css" rel="stylesheet">
+        <link href="plugins/sliderpro/slider-pro.min.css" rel="stylesheet">
     </head>
     <body>
         <div class="footer-wrapper">
@@ -190,16 +191,32 @@
                                         Лучшие статьи недели
                                     </a>
                                 </h6>
-                                <div class="slider-hot-news">
-                                    <div id="cbp-fwslider" class="cbp-fwslider">
-                                        <ul>
-                                            <li>
-                                                <a href="#"><img src="https://unsplash.imgix.net/photo-1423683249427-8ca22bd873e0?fit=crop&fm=jpg&h=700&q=75&w=1050" alt="img01" /></a>
-                                            </li>
-                                            <li>
-                                                <a href="#"><img src="https://unsplash.imgix.net/photo-1421986527537-888d998adb74?fit=crop&fm=jpg&h=700&q=75&w=1050" alt="img02" /></a>
-                                            </li>
-                                        </ul>
+                                <div class="slider-pro" id="js-shop-slider">
+                                    <div class="sp-slides">
+                                        <div class="sp-slide">
+                                            <div class="sp-layer">
+                                                consectetur adipisicing elit
+                                            </div>
+                                            <img class="sp-image" src="http://apple-minsk.by/files/items/1150/icon_480x390.png" />
+                                        </div>
+                                        <div class="sp-slide">
+                                            <div class="sp-layer">
+                                                consectetur adipisicing elit
+                                            </div>
+                                            <img class="sp-image" src="http://apple-minsk.by/files/galleries/893/3688/src_480x391.jpg?1" alt="" />
+                                        </div>
+                                        <div class="sp-slide">
+                                            <div class="sp-layer">
+                                                consectetur adipisicing elit
+                                            </div>
+                                            <img class="sp-image" src="http://apple-minsk.by/files/galleries/893/3689/src_480x391.jpg?1" alt="" />
+                                        </div>
+                                        <div class="sp-slide">
+                                            <div class="sp-layer">
+                                                consectetur adipisicing elit
+                                            </div>
+                                            <img class="sp-image" src="http://apple-minsk.by/files/galleries/893/3690/src_480x391.jpg?1" />
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -677,7 +694,7 @@
                                         Самые активные пользователи этой недели
                                     </a>
                                 </h6>
-                            
+
                                 <div class="col-xs-6 col-sm-4 col-md-3 col-lg-3 user-item">
                                     <div class="user-inner">
                                         <img class="background" src="img/users/user1.png" alt="user-name" />
@@ -1024,10 +1041,18 @@
 
         <!-- Include all compiled plugins (below), or include individual files as needed -->
         <script src="js/bootstrap.min.js"></script>
-        <script src="plugins/carousel/modernizr.custom.js"></script>
-        <script src="plugins/carousel/jquery.cbpFWSlider.min.js"></script>
+
         <script src="js/layout.js"></script>
         <script src="js/index-page.js"></script>
+        <script src="plugins/sliderpro/jquery.sliderPro.min.js"></script>
+        <script>
+            $('#js-shop-slider').sliderPro({
+                width: "100%",
+                height: 460,
+                thumbnailsPosition: "bottom",
+                buttons: true,
+                
+            });
+        </script>
     </body>
-
 </html>
