@@ -3,15 +3,26 @@
   /*Styles for shit-code*/
   /*Styles for shit-code*/
 }
+.header .lg-sized-icons {
+  line-height: 35px;
+}
+.header .big-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 10px;
+}
+.header .small-text {
+  text-transform: uppercase;
+  font-size: 10px;
+}
 .header .header-background {
   background-image: url("../img/header-background.png");
   height: 100%;
   width: 100%;
 }
-.header .navbar-links {
-  font-family: 'Times New Roman', Times, sans-serif;
-  font-size: 15px;
-  text-align: center;
+.header .navbar-nav {
+  font-size: 12px;
+  font-weight: 800;
 }
 .header .navbar-links a {
   color: black;
@@ -52,7 +63,7 @@
   color: white;
 }
 .header .btns-socnet {
-  padding-top: 15px;
+  /* padding-top: 15px;*/
 }
 .header .search-area {
   padding: 20px 20px;

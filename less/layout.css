@@ -1,5 +1,6 @@
 ﻿@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic&subset=cyrillic,latin);
 @import url(http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic&subset=latin,cyrillic-ext);
+@import "../plugins/selectPlugin/select.css";
 /*! main layout CSS */
 @font-face {
   font-family: 'Material-Design-Icons';
@@ -2522,15 +2523,26 @@
   /*Styles for shit-code*/
   /*Styles for shit-code*/
 }
+.header .lg-sized-icons {
+  line-height: 35px;
+}
+.header .big-text {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 10px;
+}
+.header .small-text {
+  text-transform: uppercase;
+  font-size: 10px;
+}
 .header .header-background {
   background-image: url("../img/header-background.png");
   height: 100%;
   width: 100%;
 }
-.header .navbar-links {
-  font-family: 'Times New Roman', Times, sans-serif;
-  font-size: 15px;
-  text-align: center;
+.header .navbar-nav {
+  font-size: 12px;
+  font-weight: 800;
 }
 .header .navbar-links a {
   color: black;
@@ -2571,7 +2583,7 @@
   color: white;
 }
 .header .btns-socnet {
-  padding-top: 15px;
+  /* padding-top: 15px;*/
 }
 .header .search-area {
   padding: 20px 20px;
@@ -2685,10 +2697,37 @@
   -ms-border-radius: 0;
   border-radius: 0;
   outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0);
+  -moz-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+}
+.btn:active {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
 }
 .btn-info {
   background: #39c2ef;
   border: 1px solid #148bb2;
+}
+.btn-success {
+  background: #4daf7c;
+  border-color: #76dca7;
+}
+.btn-success:hover {
+  background: #4daf7c;
+  border-color: #76dca7;
+}
+.btn-transparent {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.65);
+  color: #fff !important;
 }
 .background-orange {
   background-color: #e73f3f;
@@ -2945,6 +2984,9 @@ body {
 .colored-icons-red {
   color: red;
 }
+.lg-sized-icons {
+  font-size: 29px;
+}
 .md-sized-icons {
   font-size: 25px;
 }
@@ -2967,5 +3009,8 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+.social-block {
+  display: none;
 }
 /*# sourceMappingURL=layout.css.map */
