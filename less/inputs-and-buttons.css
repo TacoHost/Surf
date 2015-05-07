@@ -16,6 +16,9 @@
 .bottom-styled-input:focus {
   border-bottom: 1px solid #1e9bc4;
 }
+.input-little-width {
+  width: 40px;
+}
 .btn {
   -ms-border-radius: 0;
   border-radius: 0;
