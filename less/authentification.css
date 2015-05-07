@@ -23,10 +23,13 @@ body .main-info-container button {
 body .row a {
   font-size: 12px;
 }
-body .row i {
+body .underline-links i {
   float: right;
 }
 body .links {
   color: rgba(255, 255, 255, 0.7);
+}
+body .empty-block {
+  margin-bottom: 100px;
 }
 /*# sourceMappingURL=authentification.css.map */
