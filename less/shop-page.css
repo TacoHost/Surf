@@ -363,4 +363,7 @@ table tr td {
 body .filter input {
   display: inline-block;
 }
+body li a {
+  color: black;
+}
 /*# sourceMappingURL=shop-page.css.map */
