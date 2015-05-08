@@ -2758,6 +2758,7 @@
 }
 body {
   font-family: 'Ubuntu', sans-serif;
+  background: url(../img/body-bg.png);
 }
 .parallax-window .container {
   background-color: rgba(0, 0, 0, 0.2);
@@ -2767,7 +2768,7 @@ body {
 }
 .main-wrapper {
   background: #fff;
-  padding: 15px 0 0 15px;
+  padding: 15px 0 15px 15px;
 }
 .main-wrapper:after {
   display: block;
@@ -2833,12 +2834,7 @@ body {
   clear: both;
 }
 .footer-fix {
-  height: 50px;
-}
-.footer {
-  height: 50px;
-  margin-top: -50px;
-  background: #4b4b4b;
+  height: 0;
 }
 /*Helpers*/
 .no-padding-left {
