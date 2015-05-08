@@ -97,7 +97,7 @@
 
 /* Individual options */
  .selectboxit-option .selectboxit-option-anchor{
-  padding: 0 2px;
+  padding: 0;
 }
 
 /* Individual Option Hover Action */
@@ -210,7 +210,25 @@
   Note: Feel free to remove all of the CSS underneath this line if you are not using the default theme
 */
 .selectboxit-btn {
-  border-bottom:1px dotted #b3b3b3;
+    border-bottom: 1px dotted #b3b3b3;
+    -moz-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -o-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    -webkit-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+    transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.selectboxit-btn:after {
+    position: absolute;
+    display: block;
+    font: normal 12px 'Material-Design-Icons';
+    content: "";
+    padding: 0 5px 0;
+    right: 5px;
+    top: 50%;
+    margin-top: -11px;
+    background: #36a760;
+    color: #fff;
+    line-height: 22px;
+    border-radius: 20px;
 }
 
 .selectboxit-btn.selectboxit-open{
@@ -219,8 +237,8 @@
 .selectboxit-btn.selectboxit-enabled:hover,
 .selectboxit-btn.selectboxit-enabled:focus,
 .selectboxit-btn.selectboxit-enabled:active {
-  color: #333333;
-  background-color: #e6e6e6;
+  
+  border-bottom:1px solid #1b95bd;
 }
 
 .selectboxit-btn.selectboxit-enabled:hover,
@@ -239,25 +257,45 @@
 }
 
 .selectboxit-list {
-  background-color: #ffffff;
-    box-shadow: 0 2px 5px rgba(0,0,0, 0.2);
+    background-color: #ffffff;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.25) !important;
+    top: 0 !important;
 }
-
+.selectboxit-list li:nth-child(even) {
+    background-color: #f1f1f1;
+}
 .selectboxit-list .selectboxit-option-anchor {
   color: #333333;
 }
 
+.selectboxit-list .selectboxit-option:nth-child(even) {
+  background-color: #f9f9f9;
+  background-repeat: repeat-x;
+}
 .selectboxit-list > .selectboxit-focus > .selectboxit-option-anchor {
-  color: #ffffff;
-  background-color: #0081c2;
-  background-image: -moz-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#0088cc), to(#0077b3));
-  background-image: -webkit-linear-gradient(top, #0088cc, #0077b3);
-  background-image: -o-linear-gradient(top, #0088cc, #0077b3);
-  background-image: linear-gradient(to bottom, #0088cc, #0077b3);
+  background-color: #f1f1f1;
   background-repeat: repeat-x;
 }
 
 .selectboxit-list > .selectboxit-disabled > .selectboxit-option-anchor {
   color: #999999;
+}
+
+.selectboxit-list .selectboxit-selected {
+    border-radius: 0;
+    position: relative;
+}
+.selectboxit-list .selectboxit-selected:after {
+    position: absolute;
+    display: block;
+    font: normal 12px 'Material-Design-Icons';
+    content: "";
+    padding: 0 5px 0 0;
+    right: 5px;
+    top: 50%;
+    margin-top: -11px;
+    background: #cccccc;
+    color: #fff;
+    line-height: 22px;
+    border-radius: 20px;
 }
