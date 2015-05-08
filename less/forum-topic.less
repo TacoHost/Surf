@@ -4,25 +4,33 @@
 @import "stats-circles";
 @import "products-small-grid";
 @import "tables";
+@import "user-page";
 
 body {
-
-    .big-border {
-        border: 1px solid rgb(0, 0, 0);
-    }
 
     .search-for-items {
         width: 80%;
         display: inline-block;
     }
 
-    .article-icon {
-        margin-top: -2px;
-        padding-right: 10px;
-        position: relative;
+    .main-forum-topic:after {
+        font: normal 28px 'Material-Design-Icons';
+        content: "";
+        display: block;
+        position: absolute;
+        top: -8px;
+        right: 22px;
+        color: #4ac7f0;
+    }
+    .main-forum-topic {
+        .comment-inner {
+            border: 1px solid #979797 !important;
+        }
     }
     .callback {
         font-size: 12px;
         padding-left: 10px;
     }
+
+
 }

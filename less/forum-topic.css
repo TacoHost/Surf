@@ -78,7 +78,8 @@
   padding-left: 40px;
 }
 .social-block {
-  position: relative;
+  padding: 20px 0 0 15px;
+  position: absolute;
   z-index: 900;
 }
 .social-block .big-circle {
@@ -95,6 +96,7 @@
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .social-block .big-circle .counter {
   position: absolute;
@@ -130,9 +132,6 @@
   background: transparent;
   color: #fff;
   position: relative;
-}
-.parallax-window .container {
-  padding: 20px 0;
 }
 .parallax-window h3 {
   font-weight: 300;
@@ -278,6 +277,7 @@
   max-width: 80%;
   margin: 0 auto;
   display: block;
+  height: 230px;
 }
 .presents-preview .shop-item .product-info {
   background: #f5f5f5;
@@ -338,17 +338,123 @@ table tr td {
   padding: 10px 5px;
   vertical-align: central;
 }
-body .big-border {
-  border: 1px solid #000000;
+#user-page .wallpaper-block {
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  border-radius: 5px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-bottom: 20px;
+}
+#user-page .wallpaper-block .user-avatar {
+  display: block;
+  width: 150px;
+  border-radius: 90px;
+  border: 3px solid #fff;
+  margin: 20px auto;
+}
+#user-page .wallpaper-block h1 {
+  color: #fff;
+  font-size: 22px;
+  font-weight: 800;
+}
+#user-page .simple-box {
+  position: relative;
+  overflow: hidden;
+}
+#user-page .simple-box .user-wallpaper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+}
+#user-page .simple-box .user-wallpaper-blur {
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  overflow: hidden;
+  border-radius: 5px 0 0 5px;
+}
+#user-page .simple-box .user-wallpaper-blur img {
+  display: block;
+  min-height: 100%;
+  min-width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  -webkit-filter: blur(5px);
+  filter: blur(5px);
+}
+#user-page .simple-box .user-wallpaper-blur:after {
+  width: 100%;
+  left: 0;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  content: " ";
+  background: rgba(0, 0, 0, 0.2);
+}
+#user-page .photo-container div {
+  padding: 0;
+}
+#user-page .photo-container :nth-child(even) {
+  padding: 0 0 5px 2.5px;
+}
+#user-page .photo-container :nth-child(odd) {
+  padding: 0 2.5px 5px 0;
+}
+#user-page .article-item {
+  padding: 0 0 10px 0;
+}
+#user-page .article-item a {
+  color: #1d1d1d;
+}
+#user-page .article-item a h3 {
+  font-family: 'Noto Serif', serif;
+  font-size: 13pt;
+  font-weight: 800;
+}
+#user-page .article-item img {
+  max-width: 80%;
+  margin: 20px auto;
+}
+#user-page .article-item .stats-block {
+  font-size: 9pt;
+  color: #7d7d7d;
+}
+#user-page .article-item .stats-block span {
+  margin: 0 10px;
+}
+@media (min-width: 992px) {
+  .wallpaper-block {
+    min-height: 305px;
+  }
+}
+@media (min-width: 1200px) {
+  .wallpaper-block {
+    min-height: 370px;
+  }
 }
 body .search-for-items {
   width: 80%;
   display: inline-block;
 }
-body .article-icon {
-  margin-top: -2px;
-  padding-right: 10px;
-  position: relative;
+body .main-forum-topic:after {
+  font: normal 28px 'Material-Design-Icons';
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: 22px;
+  color: #4ac7f0;
+}
+body .main-forum-topic .comment-inner {
+  border: 1px solid #979797 !important;
 }
 body .callback {
   font-size: 12px;
