@@ -55,4 +55,7 @@
   border-color: rgba(255, 255, 255, 0.65);
   color: #fff !important;
 }
+.search-area .btn {
+  line-height: 20px;
+}
 /*# sourceMappingURL=inputs-and-buttons.css.map */
