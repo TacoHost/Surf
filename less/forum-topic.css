@@ -338,17 +338,21 @@ table tr td {
   padding: 10px 5px;
   vertical-align: central;
 }
-body .big-border {
-  border: 1px solid #000000;
-}
 body .search-for-items {
   width: 80%;
   display: inline-block;
 }
-body .article-icon {
-  margin-top: -2px;
-  padding-right: 10px;
-  position: relative;
+body .main-forum-topic:after {
+  font: normal 28px 'Material-Design-Icons';
+  content: "";
+  display: block;
+  position: absolute;
+  top: -8px;
+  right: 22px;
+  color: #4ac7f0;
+}
+body .main-forum-topic .comment-inner {
+  border: 1px solid #979797 !important;
 }
 body .callback {
   font-size: 12px;
