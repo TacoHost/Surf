@@ -34,6 +34,14 @@
   width: 35px;
   box-shadow: 0 0 0 3px #fff;
 }
+.comments-block .comment-item .comment-inner .big-user-avatar {
+  position: absolute;
+  left: -27px;
+  top: 7px;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 0 0 3px #fff;
+}
 .comments-block .comment-item .comment-inner .name-date {
   padding: 3px 0;
 }
@@ -330,59 +338,20 @@ table tr td {
   padding: 10px 5px;
   vertical-align: central;
 }
-body .comments-block .comment-item {
-  margin-bottom: 20px;
-}
-body .comments-block .comment-item .comment-inner {
-  position: relative;
-  padding: 10px 10px 5px 25px;
-  border: 1px solid #f3f3f3;
-}
-body .comments-block .comment-item .comment-inner .user-avatar {
-  position: absolute;
-  left: -18px;
-  top: 5px;
-  height: 35px;
-  width: 35px;
-  box-shadow: 0 0 0 3px #fff;
-}
-body .comments-block .comment-item .comment-inner .name-date {
-  padding: 3px 0;
-}
-body .comments-block .comment-item .comment-inner .name-date .date {
-  color: #778492;
-  font-size: 12px;
-}
-body .comments-block .comment-item .comment-inner p {
-  margin: 10px 0 0;
-  color: #565656;
-}
-body .comments-block .comment-item .comment-inner .function-block .btn-sm {
-  font-size: 12px;
-  padding: 2px 4px;
-  background: none;
-  color: #929292;
-  transition: all 0.3s ease-in;
-}
-body .comments-block .comment-item .comment-inner .function-block .btn-sm i {
-  font-size: 14px;
-  position: relative;
-  top: 2px;
-}
-body .comments-block .comment-item .comment-inner .function-block .btn-sm:hover {
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.3);
-}
-body .comments-block .comment-item .comment-inner .function-block .btn-sm:hover i {
-  color: #e36262;
-}
-body .comments-block .comment-item.embedded {
-  padding-left: 20px;
-}
-body .comments-block .comment-item.embedded-twice {
-  padding-left: 40px;
+body .big-border {
+  border: 1px solid #000000;
 }
 body .search-for-items {
   width: 80%;
   display: inline-block;
+}
+body .article-icon {
+  margin-top: -2px;
+  padding-right: 10px;
+  position: relative;
+}
+body .callback {
+  font-size: 12px;
+  padding-left: 10px;
 }
 /*# sourceMappingURL=forum-topic.css.map */
