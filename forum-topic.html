@@ -32,20 +32,7 @@
     <div class="footer-wrapper">
         <div id="js-header"></div>
         <script type="text/javascript">
-            $("#js-header").load("header.html", function () {
-                var $socblock = $(".social-block");
-                var initialOffset = $socblock.offset().top;
-                $(window).scroll(function () {
-                    if (window.scrollY >= initialOffset) {
-                        $socblock.css("position", "fixed").css("top", "0");
-                    } else if (window.scrollY < initialOffset) {
-                        $socblock.css({
-                            position: "absolute",
-                            top: "0"
-                        });
-                    }
-                });
-            });
+            $("#js-header").load("header.html");
         </script>
         <div class="container">
             <div class="row">
@@ -61,10 +48,12 @@
                                     </div>
                                 </div>
                                 <h3>Мотоэкипировка. Выбор. Обсуждение</h3>
-                                <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
-                                    <div class="comment-item">
+                            <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+                                <div class="comment-item">
+                                    <div class="big-border">
+                                        <img class="pull-right article-icon" src="img/main-article-icon.png" alt=""/>
                                         <div class="comment-inner">
-                                            <img src="img/users/user3.png" class="user-avatar rounded-image" alt="" />
+                                            <img src="img/users/user3.png" class="big-user-avatar rounded-image" alt=""/>
                                             <div class="name-date clear-after">
                                                 <div class="pull-left">Юлия Василевская</div>
                                                 <div class="pull-right date">2 марта 2015 в 14:21</div>
@@ -82,47 +71,122 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="comment-item embedded">
-                                        <div class="comment-inner">
-                                            <img src="img/users/user6.png" class="user-avatar rounded-image" alt="" />
-                                            <div class="name-date clear-after">
-                                                <div class="pull-left">Василий Крупский</div>
-                                                <div class="pull-right date">2 марта 2015 в 14:21</div>
-                                            </div>
-                                            <p>
-                                                Ну а те, кому не нравится задняя крышка - вы его все равно будете носить в чехле! :))
-                                            </p>
-                                            <div class="function-block clear-after">
-                                                <div class="pull-right">
-                                                    <button class="btn btn-sm">
-                                                        <i class="mdi-action-thumb-up"></i>
-                                                        55
-                                                    </button>
-                                                </div>
-                                            </div>
+                                </div>
+                                <div class="comment-item">
+                                    <div class="comment-inner">
+                                        <img src="img/users/user8.png" class="user-avatar rounded-image" alt=""/>
+                                        <div class="name-date clear-after">
+                                            <div class="pull-left">Надежда Иванова</div>
+                                            <span class="callback"><a href="">Ответить</a></span>
+                                            <div class="pull-right date">2 марта 2015 в 14:21</div>
                                         </div>
-                                    </div>
-                                    <div class="comment-item">
-                                        <div class="comment-inner">
-                                            <img src="img/users/user8.png" class="user-avatar rounded-image" alt="" />
-                                            <div class="name-date clear-after">
-                                                <div class="pull-left">Надежда Иванова</div>
-                                                <div class="pull-right date">2 марта 2015 в 14:21</div>
-                                            </div>
-                                            <p>
-                                                У меня золотой на 16 гигигов. Пользуюсь с октября 14, привезли с Сингапура. Сразу скажу что он там дешевле на 200-250 вражеских рублей. Когда берёшь в руки, понимаешь, что скорее всего эпл навсегда... дизайн это космос, экран идеальный для меня как по размеру так и по изображению.
-                                            </p>
-                                            <div class="function-block clear-after">
-                                                <div class="pull-right">
-                                                    <button class="btn btn-sm">
-                                                        <i class="mdi-action-thumb-up"></i>
-                                                        4
-                                                    </button>
-                                                </div>
+                                        <p>
+                                            У меня золотой на 16 гигигов. Пользуюсь с октября 14, привезли с Сингапура. Сразу скажу что он там дешевле на 200-250 вражеских рублей. Когда берёшь в руки, понимаешь, что скорее всего эпл навсегда... дизайн это космос, экран идеальный для меня как по размеру так и по изображению.
+                                        </p>
+                                        <div class="function-block clear-after">
+                                            <div class="pull-right">
+                                                <button class="btn btn-sm">
+                                                    <i class="mdi-action-thumb-up"></i>
+                                                    4
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="comment-item embedded">
+                                    <div class="comment-inner">
+                                        <img src="img/users/user6.png" class="user-avatar rounded-image" alt=""/>
+                                        <div class="name-date clear-after">
+                                            <div class="pull-left">Степан Корыто</div>
+                                            <div class="pull-right date">2 марта 2015 в 14:21</div>
+                                        </div>
+                                        <p>
+                                            Ну а те, кому не нравится задняя крышка - вы его все равно будете носить в чехле! :))
+                                        </p>
+                                        <div class="function-block clear-after">
+                                            <div class="pull-right">
+                                                <button class="btn btn-sm">
+                                                    <i class="mdi-action-thumb-up"></i>
+                                                    55
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-item">
+                                    <div class="comment-inner">
+                                        <img src="img/users/user8.png" class="user-avatar rounded-image" alt=""/>
+                                        <div class="name-date clear-after">
+                                            <div class="pull-left">Тамара Васильева</div>
+                                            <div class="pull-right date">2 марта 2015 в 14:21</div>
+                                        </div>
+                                        <p>
+                                            мои друзья из Китая, познакомились в Твери на семинаре любителей рисовать человечков на листе большого формата. Скидываю фотку просто так, ибо некому ее показать больше. </p>
+                                        <img src="img/main-article-page-image.png" alt=""/>
+                                        <div class="function-block clear-after">
+                                            <div class="pull-right">
+                                                <button class="btn btn-sm">
+                                                    <i class="mdi-action-thumb-up"></i>
+                                                    4
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-item">
+                                    <div class="comment-inner">
+                                        <img src="img/users/user8.png" class="user-avatar rounded-image" alt=""/>
+                                        <div class="name-date clear-after">
+                                            <div class="pull-left">Светлана Лущинкова</div>
+                                            <span class="callback"><a href="">Ответить</a></span>
+                                            <div class="pull-right date">2 марта 2015 в 14:21</div>
+                                        </div>
+                                        <p>
+                                            Можно ли использовать телефон в качестве молотка?
+                                        </p>
+                                        <div class="function-block clear-after">
+                                            <div class="pull-right">
+                                                <button class="btn btn-sm">
+                                                    <i class="mdi-action-thumb-up"></i>
+                                                    4
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="comment-item embedded">
+                                    <div class="comment-inner">
+                                        <img src="img/users/user6.png" class="user-avatar rounded-image" alt=""/>
+                                        <div class="name-date clear-after">
+                                            <div class="pull-left">Леша Алексеев</div>
+                                            <div class="pull-right date">2 марта 2015 в 14:21</div>
+                                        </div>
+                                        <p>
+                                            Нет, не надо :))
+                                        </p>
+                                        <div class="function-block clear-after">
+                                            <div class="pull-right">
+                                                <button class="btn btn-sm">
+                                                    <i class="mdi-action-thumb-up"></i>
+                                                    55
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="btn-group" role="group" aria-label="...">
+                                    <button type="button" class="btn btn-default">previous</button>
+                                    <button type="button" class="btn btn-default">1</button>
+                                    <button type="button" class="btn btn-default">2</button>
+                                    <button type="button" class="btn btn-default">3</button>
+                                    <button type="button" class="btn btn-default">4</button>
+                                    <button type="button" class="btn btn-default">5</button>
+                                    <button type="button" class="btn btn-default">...</button>
+                                    <button type="button" class="btn btn-default">44</button>
+                                    <button type="button" class="btn btn-default">next</button>
+                                </div>
+                            </div>
+
                                 <!--SideBar Right-->
                                 <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 no-padding-left">
                                     <!--searchForm-->
@@ -136,7 +200,6 @@
                                     <input class="form-control bottom-styled-input search-for-items" type="text" placeholder="введите данные по поиску" />
                                     <a><i class="mdi-action-search sm-sized-icons"></i></a>
                                     <!--/searchForm-->
-                                    
                                     <!--best-comments-block-->
                                     <div class="breadcrumbs-block colored-border-top blue">
                                         <div class="padding-lr">
@@ -159,7 +222,6 @@
                                     </div>
                                     <div class="clearfix"></div>
                                     <!--/best-comments-block-->
-
                                     <!--top-best-themes-->
                                     <div class="breadcrumbs-block colored-border-top orange">
                                         <div class="padding-lr">
@@ -170,7 +232,6 @@
 
                                     </div>
                                     <!--/top-best-themes-->
-
                                     <!--comments-top-best-themes-->
                                     <div class="col-md-1 col-lg-1"></div>
                                     <div class="comment-item col-md-11 col-lg-11">
@@ -196,7 +257,7 @@
                                     <div class="comment-item col-md-11 col-lg-11">
                                         <div class="comment-inner">
                                             <img src="img/users/user3.png" class="user-avatar rounded-image" alt="" />
-                                            Пользуюсь 6-кой, 2 недели до этого была 5-ка(2 года)                                            
+                                            Пользуюсь 6-кой, 2 недели до этого была 5-ка(2 года)
                                             <i class="mdi-communication-chat colored-icons-red xs-sized-icons">321</i>
                                             <i class="mdi-image-remove-red-eye xs-sized-icons">2323</i>
 
@@ -250,14 +311,7 @@
 
     <script src="plugins/progress-circle/circle-progress.js"></script>
 
-    <script>
-        $('#js-shop-slider').sliderPro({
-            width: "100%",
-            height: 460,
-            thumbnailsPosition: "bottom",
-            buttons: false
-        });
-    </script>
+
 </body>
 
 

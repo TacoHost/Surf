@@ -14,6 +14,14 @@
   width: 35px;
   box-shadow: 0 0 0 3px #fff;
 }
+.comments-block .comment-item .comment-inner .big-user-avatar {
+  position: absolute;
+  left: -27px;
+  top: 7px;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 0 0 3px #fff;
+}
 .comments-block .comment-item .comment-inner .name-date {
   padding: 3px 0;
 }
