@@ -34,6 +34,14 @@
   width: 35px;
   box-shadow: 0 0 0 3px #fff;
 }
+.comments-block .comment-item .comment-inner .big-user-avatar {
+  position: absolute;
+  left: -27px;
+  top: 7px;
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 0 0 3px #fff;
+}
 .comments-block .comment-item .comment-inner .name-date {
   padding: 3px 0;
 }
@@ -355,10 +363,37 @@ table tr td {
   -ms-border-radius: 0;
   border-radius: 0;
   outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 12px;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0);
+  -moz-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.btn:hover {
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.1);
+}
+.btn:active {
+  box-shadow: 0 8px 17px 0 rgba(0, 0, 0, 0.2);
 }
 .btn-info {
   background: #39c2ef;
   border: 1px solid #148bb2;
+}
+.btn-success {
+  background: #4daf7c;
+  border-color: #76dca7;
+}
+.btn-success:hover {
+  background: #4daf7c;
+  border-color: #76dca7;
+}
+.btn-transparent {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.65);
+  color: #fff !important;
 }
 body .filter input {
   display: inline-block;
