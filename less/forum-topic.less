@@ -4,6 +4,7 @@
 @import "stats-circles";
 @import "products-small-grid";
 @import "tables";
+@import "user-page";
 
 body {
 
@@ -30,4 +31,32 @@ body {
         font-size: 12px;
         padding-left: 10px;
     }
+        .little-circle {
+        width: 22px;
+        height: 22px;
+        margin: 0 auto 10px;
+        border-radius: 30px;
+        text-align: center;
+        position: relative;
+        padding: 14px 0 0 0;
+        border: 3px solid;
+        color: #d9d9d9;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        -webkit-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+
+        .counter {
+            position: absolute;
+            top: -10px;
+            right: -10px;
+            min-width: 30px;
+            height: 30px;
+            font-size: 12px;
+            padding: 6px 3px;
+            border-radius: 20px;
+            color: #fff;
+        }
+    }
+
 }
