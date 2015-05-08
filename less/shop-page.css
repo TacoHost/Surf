@@ -78,7 +78,8 @@
   padding-left: 40px;
 }
 .social-block {
-  position: relative;
+  padding: 20px 0 0 15px;
+  position: absolute;
   z-index: 900;
 }
 .social-block .big-circle {
@@ -95,6 +96,7 @@
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
+  background-color: rgba(255, 255, 255, 0.1);
 }
 .social-block .big-circle .counter {
   position: absolute;
@@ -130,9 +132,6 @@
   background: transparent;
   color: #fff;
   position: relative;
-}
-.parallax-window .container {
-  padding: 20px 0;
 }
 .parallax-window h3 {
   font-weight: 300;
@@ -394,6 +393,9 @@ table tr td {
   background: rgba(255, 255, 255, 0.05);
   border-color: rgba(255, 255, 255, 0.65);
   color: #fff !important;
+}
+.search-area .btn {
+  line-height: 20px;
 }
 body .filter input {
   display: inline-block;
