@@ -1,5 +1,4 @@
 ﻿/*! main layout CSS */
-
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic&subset=cyrillic,latin);
 @import url(http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic&subset=latin,cyrillic-ext);
 
@@ -9,7 +8,6 @@
 @import "header-without-nav";
 @import "inputs-and-buttons";
 @import "../plugins/selectPlugin/select.css";
-
 
 @orange: #e73f3f;
 @orange-text: #e73f3f;
@@ -64,85 +62,29 @@ body {
         background-color: rgba(0,0,0,0.2);
     }
 }
+
 .footer-wrapper {
     min-height: 100%;
 }
+
 .main-wrapper {
     background: #fff;
     padding: 15px 0 15px 15px;
+    border:1px solid rgb(227, 227, 227);
+    box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.12);
+    border-top: 0;
 }
+
 .main-wrapper:after {
     display: block;
     content: " ";
     clear: both;
     min-height: 100%;
 }
-.header {
-    position: relative;
-    overflow: hidden;
-    color: white;
-
-    .header-background {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        -webkit-filter: blur(6px);
-        -moz-filter: blur(6px);
-        -o-filter: blur(6px);
-        filter: blur(6px);
-        -webkit-transform: scale(1.4);
-        -moz-transform: scale(1.4);
-        -ms-transform: scale(1.4);
-        -o-transform: scale(1.4);
-        transform: scale(1.4);
-        z-index: -1;
-        -webkit-transition: all 0.7s ease-out;
-        -moz-transition: all 0.7s ease-out;
-        -ms-transition: all 0.7s ease-out;
-        -o-transition: all 0.7s ease-out;
-        transition: all 0.7s ease-out;
-    
-        img{
-            width: 100%;
-            height: auto;
-            margin-top: -20%;
-        }
-    }
-}
-.header .main-navigation{
-    background-color: #fff;
-    color: #000;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-}
-.header .main-navigation ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    
-    li{
-        display: inline-block;
-    }
-    li a{
-        display: block;
-        height: 100%;
-        width: 100%;
-        padding: 27px 20px;
-    }
-}
-
-.header:after {
-    display: block;
-    content: " ";
-    clear: both;
-}
 
 .footer-fix {
     height: 0;
 }
-
 
 /*Helpers*/
 .no-padding-left {
@@ -171,8 +113,9 @@ body {
 }
 .link-to-details {
     position: absolute;
-    right: 25px;
-    top: 15px;
+    right: 10px;
+    top: 10px;
+    color: #575757;
     font-size: 12px;
     i {
         font-size: 12px;

@@ -2,7 +2,7 @@
   padding: 0 2px 4px;
 }
 .best-users .user-item .user-inner {
-  background-color: #ffd800;
+  background-color: #fff;
   position: relative;
   overflow: hidden;
   padding: 10px 0;
@@ -14,6 +14,10 @@
   z-index: 1;
   top: 0;
   left: 0;
+  -moz-transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -o-transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: 0.6s cubic-bezier(0.4, 0, 0.2, 1);
 }
 .best-users .user-item .user-inner .user-information {
   position: relative;
@@ -31,6 +35,13 @@
 }
 .best-users .user-item .user-inner ul li {
   margin: 10px 0;
+}
+.best-users :hover .background {
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .best-users .col-xs-6.col-sm-4.col-md-3.col-lg-3 .background {
   top: -45%;
