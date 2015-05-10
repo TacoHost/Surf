@@ -1,4 +1,4 @@
-﻿body {
+body {
   background-image: url(/img/Authentication.png);
   background-size: cover;
 }
@@ -33,4 +33,3 @@ body .links {
 body .empty-block {
   margin-bottom: 100px;
 }
-/*# sourceMappingURL=authentification.css.map */

@@ -1,4 +1,4 @@
-﻿.social-block {
+.social-block {
   padding: 20px 0 0 15px;
   position: absolute;
   z-index: 900;
@@ -48,4 +48,3 @@
 .social-block .big-circle.stars:hover {
   color: #f3c217;
 }
-/*# sourceMappingURL=social-buttons-block.css.map */

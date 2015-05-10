@@ -1,4 +1,4 @@
-﻿.bottom-styled-input {
+.bottom-styled-input {
   border-radius: 0;
   border: none;
   border-bottom: 1px dotted #dadada;
@@ -62,4 +62,3 @@ button {
 .search-area .btn {
   line-height: 20px;
 }
-/*# sourceMappingURL=inputs-and-buttons.css.map */

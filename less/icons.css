@@ -1,4 +1,4 @@
-﻿@font-face {
+@font-face {
   font-family: 'Material-Design-Icons';
   src: url('../material-design-icons/Material-Design-Icons.eot?3ocs8m');
   src: url('../material-design-icons/Material-Design-Icons.eot?#iefix3ocs8m') format('embedded-opentype'), url('../material-design-icons/Material-Design-Icons.woff?3ocs8m') format('woff'), url('../material-design-icons/Material-Design-Icons.ttf?3ocs8m') format('truetype'), url('../material-design-icons/Material-Design-Icons.svg?3ocs8m#Material-Design-Icons') format('svg');
@@ -2514,4 +2514,3 @@
 .mdi-toggle-star:before {
   content: "\e8f5";
 }
-/*# sourceMappingURL=icons.css.map */

@@ -1,4 +1,5 @@
-﻿$(function () {
+﻿
+$(function () {
     /*
     - how to call the plugin:
     $( selector ).cbpFWSlider( [options] );
@@ -35,3 +36,5 @@ $('.carousel[data-type="multi"] .item').each(function () {
         next.children(':first-child').clone().appendTo($(this));
     }
 });
+
+

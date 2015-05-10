@@ -1,4 +1,4 @@
-﻿.comments-block .comment-item {
+.comments-block .comment-item {
   margin-bottom: 20px;
 }
 .comments-block .comment-item .comment-inner {
@@ -57,4 +57,3 @@
 .comments-block .comment-item.embedded-twice {
   padding-left: 40px;
 }
-/*# sourceMappingURL=comments-block.css.map */

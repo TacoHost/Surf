@@ -1,4 +1,4 @@
-﻿.articles-stack .item {
+.articles-stack .item {
   padding: 0 0 8px;
 }
 .articles-stack .item:not(:last-child) {
@@ -171,4 +171,3 @@
   font-size: 18px;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
 }
-/*# sourceMappingURL=category-page.css.map */
