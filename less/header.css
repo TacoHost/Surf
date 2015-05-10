@@ -1,6 +1,21 @@
 .header {
   position: relative;
   color: white;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+.header .logo {
+  height: 37px;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  -webkit-perspective: 600px;
+  -moz-perspective: 600px;
+  -o-perspective: 600px;
+  perspective: 600px;
+}
+.header .logo:hover {
+  transform: rotateY(-360deg);
 }
 .header .header-background {
   position: absolute;
@@ -17,24 +32,23 @@
   transition: all 0.7s ease-out;
 }
 .header .header-background img {
-  width: auto;
-  height: 100%;
+  width: 100%;
   -webkit-filter: blur(6px);
   -moz-filter: blur(6px);
   -o-filter: blur(6px);
   filter: blur(6px);
-  -webkit-transform: scale(1.4);
-  -moz-transform: scale(1.4);
-  -ms-transform: scale(1.4);
-  -o-transform: scale(1.4);
-  transform: scale(1.4);
-  top: -10%;
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
+  transform: scale(1.1);
 }
 .header .main-navigation {
   background-color: #fff;
   color: #000;
   margin-bottom: 10px;
   text-transform: uppercase;
+  text-shadow: none;
 }
 .header .main-navigation ul {
   list-style: none;

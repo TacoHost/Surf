@@ -40,6 +40,11 @@ html, body {
     transition: all 0.3s ease-in;
 }
 
+.navbar-collapse {
+  padding-right: 0;
+  padding-left: 0;
+}
+
 .nav-tabs > li {
   float: left;
   margin-bottom: 0;
