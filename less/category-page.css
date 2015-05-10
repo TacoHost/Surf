@@ -75,6 +75,16 @@
 }
 .best-users .user-item .user-inner i {
   font-size: 15px;
+  margin-right: 5px;
+}
+.best-users .user-item .user-inner .mdi-action-thumb-up {
+  color: #e36262;
+}
+.best-users .user-item .user-inner .mdi-communication-chat {
+  color: #39c2ef;
+}
+.best-users .user-item .user-inner .mdi-editor-insert-drive-file {
+  color: #F9D486;
 }
 .best-users .user-item .user-inner ul li {
   margin: 10px 0;

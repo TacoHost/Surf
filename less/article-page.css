@@ -18,6 +18,49 @@
   font-size: 12px;
   color: #bbbbbb;
 }
+.articles-stack .item {
+  padding: 0 0 8px;
+}
+.articles-stack .item:not(:last-child) {
+  border-bottom: 1px solid #dbdbdb;
+}
+.articles-stack h5 {
+  font-size: 20px;
+  font-family: 'Noto Serif', serif;
+}
+.articles-stack h5 a {
+  color: #1d1d1d;
+  text-decoration: none;
+}
+.articles-stack .preview {
+  color: #646a6e;
+  font-weight: 300;
+}
+.articles-stack .system-info {
+  font-size: 12px;
+}
+.articles-stack .system-info .user-avatar {
+  height: 35px;
+  width: 35px;
+}
+.articles-stack .system-info a {
+  color: #33373b;
+}
+.articles-stack .system-info .date-comments {
+  margin-top: 7px;
+  color: #63696d;
+}
+.articles-stack .system-info .date-comments .comments {
+  color: #e73f3f;
+}
+.articles-stack .system-info .date-comments span:first-child {
+  margin-right: 10px;
+}
+.articles-stack .system-info .date-comments i {
+  font-size: 14.5px;
+  position: relative;
+  bottom: -2px;
+}
 .comments-block .comment-item {
   margin-bottom: 20px;
 }
@@ -51,7 +94,7 @@
 }
 .comments-block .comment-item .comment-inner p {
   margin: 10px 0 0;
-  color: #565656;
+  color: #1A1A1A;
 }
 .comments-block .comment-item .comment-inner .function-block .btn-sm {
   font-size: 12px;
@@ -284,5 +327,26 @@
 }
 .article-item img {
   margin-bottom: 20px;
+}
+.about-author .list-unstyled {
+  font-size: 12px;
+  color: #1f1f1f;
+}
+.about-author .list-unstyled li {
+  margin: 9px 0;
+}
+.about-author .list-unstyled [class*="mdi-"] {
+  color: #cecece;
+}
+.about-author h5 {
+  color: #161616;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 12px;
+  margin: 12px 0 8px;
+}
+.about-author p {
+  font-size: 13px;
+  color: #63696d;
 }
 /*# sourceMappingURL=article-page.css.map */
