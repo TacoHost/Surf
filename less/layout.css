@@ -1,7 +1,7 @@
-/*! main layout CSS */
-@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic&subset=cyrillic,latin);
+﻿@import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic&subset=cyrillic,latin);
 @import url(http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic&subset=latin,cyrillic-ext);
 @import "../plugins/selectPlugin/select.css";
+/*! main layout CSS */
 @font-face {
   font-family: 'Material-Design-Icons';
   src: url('../material-design-icons/Material-Design-Icons.eot?3ocs8m');
@@ -2827,6 +2827,9 @@ button {
 .background-green {
   background-color: #4ca677;
 }
+.background-white {
+  background-color: #dbdbdb;
+}
 body {
   font-family: 'Ubuntu', sans-serif;
   background: url(../img/body-bg.png);
@@ -3047,3 +3050,4 @@ body {
     display: none;
   }
 }
+/*# sourceMappingURL=layout.css.map */

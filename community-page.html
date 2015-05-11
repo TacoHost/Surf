@@ -1,137 +1,142 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-        <title>
-            Surf
-        </title>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>
+        Surf
+    </title>
 
-        <!-- Bootstrap -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-
-
-        <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-        <!--[if lt IE 9]>
-            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-        <![endif]-->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
 
 
-        <!-- CSS and Scripts -->
-        <link href="css/bootstrap_override.css" rel="stylesheet">
-        <link href="less/layout.min.css" rel="stylesheet">
-        <link href="less/user-page.min.css" rel="stylesheet">
-    </head>
-    <body>
-        <div class="footer-wrapper" id="user-page">
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
-            <div id="js-header"></div>
-            <script type="text/javascript">
-                $("#js-header").load("header.html", function () {
-                    var $socblock = $(".social-block");
-                    var initialOffset = $socblock.offset().top;
-                    $(window).scroll(function () {
-                        if (window.scrollY >= initialOffset) {
-                            $socblock.css("position", "fixed").css("top", "0");
-                        } else if (window.scrollY < initialOffset) {
-                            $socblock.css({
-                                position: "absolute",
-                                top: "0"
-                            });
-                        }
-                    });
+
+    <!-- CSS and Scripts -->
+    <link href="css/bootstrap_override.css" rel="stylesheet">
+
+    <link href="less/layout.min.css" rel="stylesheet">
+    <link href="less/community-page.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="footer-wrapper" id="user-page">
+
+        <div id="js-header"></div>
+        <script type="text/javascript">
+            $("#js-header").load("header.html", function () {
+                var $socblock = $(".social-block");
+                var initialOffset = $socblock.offset().top;
+                $(window).scroll(function () {
+                    if (window.scrollY >= initialOffset) {
+                        $socblock.css("position", "fixed").css("top", "0");
+                    } else if (window.scrollY < initialOffset) {
+                        $socblock.css({
+                            position: "absolute",
+                            top: "0"
+                        });
+                    }
                 });
-            </script>
-
-            <div class="container">
-                <div class="row">
-                    <div class="main-wrapper">
-                        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding-left">
-                            <!--main-page user-image-->
-                            <div class="simple-box wallpaper-block">
-                                <img src="img/user-page.png" class="img-responsive user-wallpaper" alt="" />
-                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 user-wallpaper-blur">
-                                    <img src="img/user-page.png" class="js-blurred-image" alt="" />
+            });
+        </script>
+        <div class="container">
+            <div class="row">
+                <div class="main-wrapper">
+                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 no-padding-left">
+                        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 no-padding-left">
+                            <div class="row">
+                                <div class="simple-box wallpaper-block">
+                                    <img src="img/community-page-img.png" class="img-responsive user-wallpaper" alt="" />
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 user-wallpaper-blur">
+                                        <img src="img/community-page-img.png" class="js-blurred-image" alt="" />
+                                    </div>
+                                    <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center no-padding-left">
+                                        <img src="img/aksioma.png" class="user-avatar clear-after" alt="Аватар пользователя" />
+                                        <h1>
+                                            Аксиома
+                                        </h1>
+                                        <div class="white-color">
+                                            <i class="mdi-image-timer-auto md-sized-icons"></i><span class="text-counter">3123</span>
+                                        </div>
+                                            <div class="stats-block">
+                                                <div class="big-circle share">
+                                                    <i class="mdi-action-description"></i>
+                                                    <div class="counter" data-toggle="tooltip" data-placement="top" title="Количество статей, оставленых пользователем на сайте">17</div>
+                                                </div>
+                                                <div class="big-circle likes">
+                                                    <i class="mdi-maps-local-movies"></i>
+                                                    <div class="counter" data-toggle="tooltip" data-placement="top" title="Количество видеозаписей, оставленых пользователем на сайте">249</div>
+                                                </div>
+                                                <div class="big-circle stars">
+                                                    <i class="mdi-image-photo-camera"></i>
+                                                    <div class="counter" data-toggle="tooltip" data-placement="top" title="Количество фотографий, оставленых пользователем на сайте">56</div>
+                                                </div>
+                                        </div>
+                                        <button type="button" class="btn btn-danger">
+                                            Вступить в сообщество
+                                        </button>
+                                    </div>
                                 </div>
-                                <div class="col-xs-12 col-sm-12 col-md-4 col-lg-3 text-center no-padding-left">
-                                    <img src="http://images1.wikia.nocookie.net/camphalfbloodroleplay/images/5/5f/Sweet_Emily_Rudd_400x400_scaled_cropp.jpg" class="user-avatar clear-after" alt="Аватар пользователя" />
-                                    <h1>
-                                        Юлия Василевская
-                                    </h1>
-                                    <button type="button" class="btn btn-danger">
-                                        Написать сообщение
-                                    </button>
+                                <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+                                    <div class="social-block">
+                                        <div class="big-circle share">
+                                            <i class="mdi-social-share"></i>
+                                            <div class="counter">17</div>
+                                        </div>
+                                        <div class="big-circle likes">
+                                            <i class="mdi-action-thumb-up"></i>
+                                            <div class="counter">1,249</div>
+                                        </div>
+                                        <div class="big-circle stars">
+                                            <i class="mdi-toggle-star"></i>
+                                            <div class="counter">56</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7 no-padding-left">
+                                    <div class="padding-lr colored-border-top pale simple-box">
+                                        <h6>
+                                            <a href="javascript: void(0);" title="link">
+                                                Описание группы
+                                            </a>
+                                        </h6>
+                                        <div>
+                                            Данная группа посвящена котикам и чувакам в галстуках. Так же здесь вы сможете найти много забавной и бесполезной фигни, которая, возможно, когда-нибудь сможет вам пригодиться, но это не факт. Вступайте!!!
+                                        </div>
+                                    </div>
+                                    <div class="padding-lr colored-border-top pale simple-box">
+                                        <h6>
+                                            <a href="javascript: void(0);" title="link">
+                                                Участники (2999)
+                                            </a>
+                                        </h6>
+                                        <div class="followers-container">
+                                            <img src="img/users/user1.png" class="user-avatar rounded-image"/>
+                                            <img src="img/users/user2.png" class="user-avatar rounded-image"/>
+                                            <img src="img/users/user3.png" class="user-avatar rounded-image"/>
+                                            <img src="img/users/user4.png" class="user-avatar rounded-image"/>
+                                            <img src="img/users/user5.png" class="user-avatar rounded-image"/>
+                                            <img src="img/users/user6.png" class="user-avatar rounded-image"/>
+                                            <img src="img/users/user7.png" class="user-avatar rounded-image"/>
+                                            <img src="img/users/user8.png" class="user-avatar rounded-image"/>
+                                            <img src="img/users/user1.png" class="user-avatar rounded-image"/>
+                                        </div>
+                                        <button type="button" class="btn btn-default btn-see-all-followers">просмотреть всех ></button>
+                                    </div>
                                 </div>
                             </div>
+
                         </div>
-
-                        <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1 no-padding-left">
-                            <div class="social-block">
-                                <div class="big-circle share">
-                                    <i class="mdi-social-share"></i>
-                                    <div class="counter">17</div>
-                                </div>
-                                <div class="big-circle likes">
-                                    <i class="mdi-action-thumb-up"></i>
-                                    <div class="counter">1,249</div>
-                                </div>
-                                <div class="big-circle stars">
-                                    <i class="mdi-toggle-star"></i>
-                                    <div class="counter">56</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 no-padding-left">
-                            <!--the beginnin' of the 2st part of left-side-bar-->
-                            <div class="padding-lr colored-border-top pale simple-box">
-                                <h6>
-                                    <a href="javascript: void(0);" title="link">
-                                        Коротко о себе
-                                    </a>
-                                </h6>
-                                <div>
-                                    Каждый свой проект я создаю с нуля. У меня нет шаблонов, заготовок, типовых предложений. В своей работе я не использую клипарты. Все фото-материалы исключительно с фото-банков. Я гарантирую, что разработанный мной дизайн-проект будет на сто процентов уникальным!
-                                </div>
-                            </div>
-
-                            <div class="padding-lr colored-border-top pale simple-box">
-                                <h6>
-                                    <a href="javascript: void(0);" title="link">
-                                        Фото пользователя
-                                    </a>
-                                </h6>
-                                <div class="photo-container">
-                                    <!--photo-container-->
-                                    <div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
-                                        <img src="/img/user-photo-image1.png" class="img-responsive" />
-                                    </div>
-                                    <div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
-                                        <img src="/img/user-photo-image2.png" class="img-responsive" />
-                                    </div>
-                                    <div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
-                                        <img src="/img/user-photo-image4.png" class="img-responsive" />
-                                    </div>
-                                    <div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
-                                        <img src="/img/user-photo-image3.png" class="img-responsive" />
-                                    </div>
-                                    <div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
-                                        <img src="/img/user-photo-image5.png" class="img-responsive" />
-                                    </div>
-                                    <div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
-                                        <img src="/img/user-photo-image6.png" class="img-responsive" />
-                                    </div>
-                                </div><!--the end of photo-container-->
-                            </div>
-                        </div>
-
-                        <!--center-page-ingormation-->
-                        <div class="col-xs-12 col-md-7 col-lg-7 col-sm-12 no-padding-left">
+                        <div class="col-xs-12 col-sm-12 col-md-7 col-lg-7">
                             <div role="tabpanel">
                                 <!-- Nav tabs -->
                                 <ul class="nav nav-tabs" role="tablist">
@@ -248,9 +253,36 @@
                                     </div>
                                 </div>
                             </div>
-                        </div><!--the end of center-page-ingormation-->
-                        <!--right-side-bar-->
-                        <div class="col-xs-12 col-md-2 col-lg-2 col-sm-12 no-padding-left">
+                        </div>
+                        <div class="col-xs-12 col-sm-12 col-md-2 col-lg-2 no-padding-left">
+                            <div class="padding-lr colored-border-top pale simple-box">
+                                <h6>
+                                    <a href="javascript: void(0);" title="link">
+                                        Фото группы
+                                    </a>
+                                </h6>
+                                <div class="photo-container">
+                                    <!--photo-container-->
+                                    <div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
+                                        <img src="/img/user-photo-image1.png" class="img-responsive" />
+                                    </div>
+                                    <div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
+                                        <img src="/img/user-photo-image2.png" class="img-responsive" />
+                                    </div>
+                                    <div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
+                                        <img src="/img/user-photo-image4.png" class="img-responsive" />
+                                    </div>
+                                    <div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
+                                        <img src="/img/user-photo-image3.png" class="img-responsive" />
+                                    </div>
+                                    <div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
+                                        <img src="/img/user-photo-image5.png" class="img-responsive" />
+                                    </div>
+                                    <div class="col-xs-2 col-sm-2 col-md-6 col-lg-6">
+                                        <img src="/img/user-photo-image6.png" class="img-responsive" />
+                                    </div>
+                                </div>
+                            </div>
                             <div class="padding-lr colored-border-top orange simple-box">
                                 <h6>
                                     <a href="javascript: void(0);" title="link">
@@ -304,23 +336,23 @@
                                 </div>
                             </div>
                         </div>
-                        <!--the end of right-side-bar-->
                     </div>
                 </div>
             </div>
-
-            <div class="footer-fix"></div>
         </div>
+        <div class="footer-fix"></div>
 
-        <div id="js-footer"></div>
-        <script type="text/javascript">
-            $("#js-footer").load("footer.html");
-        </script>
+    </div>
 
-        <!-- Include all compiled plugins (below), or include individual files as needed -->
-        <script src="js/user-page.js"></script>
-        <script src="js/bootstrap.min.js"></script>
-        <script src="js/layout.js"></script>
+    <div id="js-footer"></div>
+    <script type="text/javascript">
+        $("#js-footer").load("footer.html");
+    </script>
 
-    </body>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/user-page.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/layout.js"></script>
+
+</body>
 </html>
